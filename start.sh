@@ -20,4 +20,4 @@ pip install --root-user-action=ignore -r requirements -q
 
 echo "continue."
 
-python bot.py
+python main.py
