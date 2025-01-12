@@ -16,7 +16,7 @@ A Telegram bot that enables users to send anonymous messages to others via refer
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/anon-msg-bot.git
+   git clone https://github.com/xcummins/anon-msg-bot.git
    cd anon-msg-bot
    chmod +x start.sh
    ./start.sh
