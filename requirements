@@ -1,6 +1,5 @@
 magic-filter==1.0.12
 aiohttp==3.9.0
-pydantic==2.4.1
 aiogram==3.16.0 
 utf-cleaner==3.4.2
 aiofiles==23.2.1
