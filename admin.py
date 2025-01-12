@@ -2,7 +2,7 @@
 
 from aiogram import types
 from aiogram.dispatcher.filters import Command
-from bot import dp, db, bot
+from main import dp, db, bot
 from config import ADMIN_ID
 
 @dp.message_handler(Command('admin'), user_id=ADMIN_ID)
