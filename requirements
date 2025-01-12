@@ -1,7 +1,8 @@
-magic-filter==1.0.12
-aiohttp==3.9.0
-aiogram==3.16.0 
+magic-filter==1.1
+aiohttp==3.12
+pydantic==2.11
+aiogram==3.16.0
 utf-cleaner==3.4.2
-aiofiles==23.2.1
+aiofiles==24.2
 certifi==2023.7.22
-typing-extensions==4.7.0
+typing-extensions==5.0
