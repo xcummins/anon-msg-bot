@@ -1,8 +1,8 @@
 magic-filter
 aiohttp
 pydantic
-aiogram
 utf-cleaner
 aiofiles
 certifi
 typing-extensions
+aiogram==2.25.1
