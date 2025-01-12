@@ -1,0 +1,3 @@
+aiogram==3.x.x  
+utf-cleaner
+sqlite3
