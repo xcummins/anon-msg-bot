@@ -14,9 +14,13 @@ class Form(StatesGroup):
 
 @dp.message_handler(Command('start'))
 async def cmd_start(message: types.Message):
-    referral_code = ''.join(random.choices(string.ascii_letters + string.digits, k=8))
-    db.add_user(message.from_user.id, referral_code)
-    await message.reply(f"Welcome to Anon Message Bot!\nYour referral link is: /anon_{referral_code}")
+    try:
+        referral_code = ''.join(random.choices(string.ascii_letters + string.digits, k=8))
+        db.add_user(message.from_user.id, referral_code)
+        await message.reply(f"Welcome to Anon Message Bot!\nYour referral link is: /anon_{referral_code}")
+    except Exception as e:
+        await message.reply("An error occurred. Please try again.")
+        logging.error(f"Error in cmd_start: {e}")
 
 @dp.message_handler(Command('anon_'), state='*')
 async def cmd_anon(message: types.Message):
